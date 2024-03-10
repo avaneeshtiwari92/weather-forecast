@@ -1,5 +1,8 @@
 ### Weather Forecast
 
+**Tech Stack**
+Java(17), Spring Boot(3.2.3), Redis
+
 **External APIs**
 1. For getting the Lat/Long from Zip Code.(zip code base) 
 2. For getting the forecast for given lat/long.(open weather map)
