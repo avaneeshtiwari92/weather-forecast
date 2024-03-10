@@ -16,7 +16,7 @@
 **Future Enhancements**
 1. Cache/Store Data(Lat/Long) in the DB OR Cache. So overtime we don't need to call the Lat/Long API.
 2. The open weather map APIs currently supports the hourly forecast for Free tier users. We can forecast for more Days and Hours using paid APIs.
-3. More unit test can be added.
+3. More unit tests can be added.
 4. Docker builds can be added to make the local testing easy.
 
 **Sample Request:**
@@ -25,13 +25,13 @@
 **Sample Response from Cache:**
 ```
 {
-"zipCode": "560069",
-"maxTemp": 31.79,
-"minTemp": 30.47,
-"latitude": 12.9407049,
-"longitude": 77.58782216,
-"currTemp": 30.96,
-"fromCache": true
+    "zipCode": "560069",
+    "maxTemp": 31.79,
+    "minTemp": 30.47,
+    "latitude": 12.9407049,
+    "longitude": 77.58782216,
+    "currTemp": 30.96,
+    "fromCache": true
 }
 ```
 
