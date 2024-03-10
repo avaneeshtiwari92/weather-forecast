@@ -26,12 +26,6 @@ public class WeatherForecastService {
     private final Logger LOGGER = LoggerFactory.getLogger(this.getClass().getSimpleName());
 
     @Autowired
-    private RestTemplate restTemplate;
-
-    @Value("${zip.code.base.api.key}")
-    private String apiKey;
-
-    @Autowired
     private ObjectMapper objectMapper;
 
     @Autowired

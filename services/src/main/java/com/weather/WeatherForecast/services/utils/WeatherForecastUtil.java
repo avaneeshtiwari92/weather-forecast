@@ -16,6 +16,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.client.RestTemplate;
 
+import java.text.MessageFormat;
 import java.util.Arrays;
 import java.util.List;
 
@@ -55,7 +56,7 @@ public class WeatherForecastUtil {
 
                 double latitude = locations.get(0).get("latitude").asDouble();
                 double longitude = locations.get(0).get("longitude").asDouble();
-                LOGGER.info(String.format("Lat {} and Long {} for the Zip code {}", latitude, longitude, zipCode));
+                LOGGER.info(format("Lat {0} and Long {1} for the Zip code {2}", latitude, longitude, zipCode));
                 weatherForecast.setLatitude(latitude);
                 weatherForecast.setLongitude(longitude);
             }
@@ -80,7 +81,10 @@ public class WeatherForecastUtil {
             weatherForecast.setMinTemp(results.get("temp_min").asDouble());
         }
 
-//        LOGGER.info(res);
         return weatherForecast;
+    }
+
+    public static String format(String pattern, Object... arguments) {
+        return MessageFormat.format(pattern, arguments);
     }
 }
