@@ -24,6 +24,7 @@
     <mockito-core.version>5.3.1</mockito-core.version>
     <io.swagger.core.version>2.2.9</io.swagger.core.version>
     <jedis.version>5.1.2</jedis.version>
+    <jetty.http.version>12.0.1</jetty.http.version>
   </properties>
 
   <dependencyManagement>
@@ -102,6 +103,11 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-cache</artifactId>
       <version>${org.springframework.boot.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.eclipse.jetty</groupId>
+      <artifactId>jetty-http</artifactId>
+      <version>${jetty.http.version}</version>
     </dependency>
   </dependencies>
 
