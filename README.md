@@ -1,7 +1,18 @@
 ### Weather Forecast
 
+**Problem Statement**
+Write an Weather Forecast API.
+Input: Zipcode
+Output: Displays weather forecast for the given zip code
+1. Forecast should at least have current temperature
+2. Additional points for high/low temperature and/or extended forecast
+
+Important Point:
+Solution should cache the forecast for 30 minutes for all subsequent requests by same
+zipcode. Also, display the indicator in response if result is pulled from the cache.
+
 **Tech Stack**
-Java(17), Spring Boot(3.2.3), Redis
+Java(17), Spring Boot(3.2.3), Redis, RESTful API, Json
 
 **External APIs**
 1. For getting the Lat/Long from Zip Code.(zip code base) 
